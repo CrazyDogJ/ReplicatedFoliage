@@ -10,6 +10,7 @@
 AReplicatedFoliageManager::AReplicatedFoliageManager()
 {
 	PrimaryActorTick.bCanEverTick = false;
+	bIsSpatiallyLoaded = false;
 	bReplicates = true;
 	bAlwaysRelevant = true;
 
