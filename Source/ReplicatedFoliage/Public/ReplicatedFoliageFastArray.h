@@ -18,13 +18,13 @@ struct FFoliageInstanceStateEntry : public FFastArraySerializerItem
 	FGuid InstanceComponentGuid;
 
 	UPROPERTY(BlueprintReadOnly, SaveGame)
-	int InstanceIndex;
+	int InstanceIndex = -1;
 	
 	UPROPERTY(BlueprintReadOnly, SaveGame)
-	float InstanceFloat;
+	float InstanceFloat = 0.0f;
 
 	UPROPERTY(BlueprintReadOnly, SaveGame)
-	bool InstanceBool;
+	bool InstanceBool = false;
 };
 
 USTRUCT(BlueprintType)

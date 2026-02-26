@@ -19,10 +19,10 @@ struct FFoliageInstanceRemoveContext
 	FTransform Transform;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	UStaticMesh* StaticMesh;
+	UStaticMesh* StaticMesh = nullptr;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	FVector ForceDirection;
+	FVector ForceDirection = FVector::ZeroVector;
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFoliageInstanceRemoved, FFoliageInstanceRemoveContext, OutContext);
