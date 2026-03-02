@@ -18,6 +18,11 @@
 			"Name": "ReplicatedFoliage",
 			"Type": "Runtime",
 			"LoadingPhase": "PostConfigInit"
+		},
+		{
+			"Name": "ReplicatedFoliageEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
 		}
 	]
 }
